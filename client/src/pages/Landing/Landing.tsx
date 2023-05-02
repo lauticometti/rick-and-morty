@@ -1,26 +1,36 @@
 import styles from './Landing.module.css'
-import { Navbar, Card } from '../../components/'
-import gradient from '../../assets/images/angular.svg'
+import { Navbar } from '../../components/'
 import rick from '../../assets/images/rick.png'
+import { Link } from 'react-router-dom'
 
 export function Landing() {
   return (
-    <div>
-      <header className={styles.header}>
+    <div className={styles.container}>
+      <header className={styles.hero}>
         <Navbar />
       </header>
-      <div className={styles.rightGradientImage}>
-        <img src={gradient} alt="" />
-      </div>
-      <div className={styles.left}>
-        <p className={styles.leftParagraph}>
-          Discover, collect, and create Rick and Morty's characters
-        </p>
-        <button className={styles.leftButton}>Explore now</button>
-      </div>
-      <div className={styles.right}>
-        <Card title="Rick Sanchéz" image={rick} />
-      </div>
+      <main className={styles.main}>
+        <div className={styles.left}>
+          <p className={styles.leftParagraph}>
+            Discover, collect, and create Rick and Morty's characters
+          </p>
+          <Link to="/characters" className={styles.leftButtonLink}>
+            <button className={styles.leftButton}>Explore now</button>
+          </Link>
+        </div>
+        <div className={styles.right}>
+          <div className={styles.cardContainer}>
+            <div className={styles.cardImageContainer}>
+              <img src={rick} alt="" className={styles.cardImage} />
+            </div>
+            <h3 className={styles.cardTitle}>Rick Sanchéz</h3>
+            <div className={styles.cardDetails}>
+              <p>Human</p>
+              <p>Male</p>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   )
 }
