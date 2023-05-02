@@ -9,7 +9,7 @@ export function Card({ title, image }: CardProps) {
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
-        <img src={image} alt='' />
+        <img src={image} alt="" className={styles.image} />
       </div>
       <h3 className={styles.title}>{title}</h3>
       <div className={styles.details}>

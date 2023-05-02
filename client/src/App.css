@@ -1,0 +1,46 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&family=Rubik:wght@300;400;500;700;900&display=swap');
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #181818;
+}
+
+button {
+  border: none;
+}
+
+/* VARIABLES */
+
+:root {
+  --color-dark: #101113;
+  --color-light: #f1f1f1;
+  /* PURPLE */
+  --color-purple-100: #5539c8;
+  --color-purple-200: #3b228f;
+  --color-purple-300: #2d1671;
+  --color-purple-400: #1f0b5a;
+
+  /* BLUE */
+  --color-secondary-100: #357aa0;
+  --color-secondary-200: #1870a1;
+  --color-secondary-300: #0e73aa;
+  --color-secondary-400: #004c75;
+
+  /* CORAL */
+  --color-coral-100: #f78383;
+  --color-coral-200: #eb6c6c;
+  --color-coral-300: #ee5a5a;
+  --color-coral-400: #f13f3f;
+}
